@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z ${NEWRELIC_LICENSE_KEY+x} ]; then
-  echo "You need to set the NEWRELIC_LICENSE_KEY environment variable. Exiting..."
+  echo "$0 requires the NEWRELIC_LICENSE_KEY environment variable. Exiting..."
   exit 1
 fi
 
