@@ -8,7 +8,7 @@ fi
 
 curl -skOL https://github.com/circonus-labs/nad/tarball/master
 
-gtar -xvf master
+gtar -xf master
 
 pkgin -y install build-essential nodejs
 
