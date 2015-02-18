@@ -6,7 +6,7 @@ if [ ! -e /opt/local/bin/pkgin ]; then
 
 	cd /
 
-	curl -k http://pkgsrc.joyent.com/packages/SmartOS/bootstrap/$BOOTSTRAP_TARBALL | gzcat | tar -xf -
+	curl -sLk http://pkgsrc.joyent.com/packages/SmartOS/bootstrap/$BOOTSTRAP_TARBALL | gzcat | tar -xf -
 
 	pkg_admin rebuild
 	echo "...done"
