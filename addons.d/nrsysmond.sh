@@ -7,7 +7,7 @@ fi
 
 if [ ! -e /opt/local/bin/pkgin ]; then
   echo "bootstrapping pkgsrc..."
-  ./pkgsrc.sh
+  ./addons.d/pkgsrc.sh
   echo "...done"
 fi
 
