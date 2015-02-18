@@ -18,3 +18,5 @@ logfile=/var/log/newrelic/nrsysmond.log
 " > /opt/local/etc/nrsysmond.cfg
 
 svcadm enable nrsysmond
+
+cp /opt/local/lib/svc/manifest/nrsysmond.xml /opt/custom/smf/
