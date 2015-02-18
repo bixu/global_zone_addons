@@ -6,9 +6,7 @@ if [ ! -z NEWRELIC_LICENSE_KEY ]; then
 fi
 
 if [ ! -e /opt/local/bin/pkgin ]; then
-  echo "bootstrapping pkgsrc..."
   ./addons.d/pkgsrc.sh
-  echo "...done"
 fi
 
 pkgin -y install nrsysmond

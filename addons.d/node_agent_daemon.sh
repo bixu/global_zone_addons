@@ -1,9 +1,7 @@
 #!/bin/bash
 
 if [ ! -e /opt/local/bin/pkgin ]; then
-  echo "bootstrapping pkgsrc..."
   ./addons.d/pkgsrc.sh
-  echo "...done"
 fi
 
 curl -skOL https://github.com/circonus-labs/nad/tarball/master

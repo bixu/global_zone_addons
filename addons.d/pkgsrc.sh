@@ -9,4 +9,5 @@ if [ ! -e /opt/local/bin/pkgin ]; then
 	curl -k http://pkgsrc.joyent.com/packages/SmartOS/bootstrap/$BOOTSTRAP_TARBALL | gzcat | tar -xf -
 
 	pkg_admin rebuild
+	echo "...done"
 fi
